@@ -1,15 +1,43 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>SampleTweet</title>
+    <title>Pictweet</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Unica+One::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script> %>
   </head>
+
+  <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">タイトル</h5>
+        <p class="card-text">コメント</p>
+        <a href="/tweets/new" class="btn btn-primary">送信</a>
+      </div>
+  </div>
+
+
+
 
   <body>
     <%= yield %>
+     <footer>
+      <p>
+        Copyright sample_Tweet 2020.
+      </p>
+    </footer>
   </body>
 </html>
