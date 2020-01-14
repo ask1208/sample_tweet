@@ -7,7 +7,7 @@
 |password|string|null:flase|
 |nickname|string|null: flase|
 
-###　アソシエーション
+### アソシエーション
 - has_many :tweets
 - has_many :comments
 
@@ -55,7 +55,7 @@
 |user_id|string|null: flase,foreign_key: true|
 |tweet_id|string|null: flase,foreign_key: true|
 
-###　アソシエーション
+### アソシエーション
 - belongs_to :tweets
 - belongs_to :user
 
