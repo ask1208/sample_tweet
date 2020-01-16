@@ -15,11 +15,19 @@
       <%=link_to "Sample_Tweet",'/', class: "header_title_text" %>
     </div>
     <div class="header_right">
-      <%=link_to "投稿",'/', class: "header_right_btn" %>
+      <%=link_to "投稿",'/tweet/new', class: "header_right_btn" %>
     </div>
   </header>
     <div class="contents">
+    <div class="message">
+        
+      </div>
       <%= yield %>
     </div>
   </body>
+   <footer>
+      <p>
+        Copyright Sample_Tweet 2020.
+      </p>
+    </footer>
 </html>
