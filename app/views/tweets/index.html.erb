@@ -1,6 +1,14 @@
 <div class="contents row">
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+      <div class="delate">
+        <span><%= image_tag 'arrow_top.png' %></span>
+        <ul class="delate_list">
+          <li>
+            <%= link_to '削除',"/tweets/#{tweet.id}",method: :delate %>
+          </li>
+        </ul>
+      </div>
       <%= simple_format(tweet.text) %>
       <span class="name">
         <%= tweet.name %>
