@@ -11,12 +11,37 @@
 
   <body>
   <header class="header">
-    <div class="header_title">
+    <%# <div class="header_title">
       <%=link_to "Sample_Tweet",'/', class: "header_title_text" %>
-    </div>
+    <%# </div>
     <div class="header_right">
       <%=link_to "投稿",'/tweets/new', class: "header_right_btn" %>
-    </div>
+    </div> 
+    <ul class="ddmenu">
+   <li><a href="/">HOME</a></li>
+  
+   <li><a href="#">Tweet</a>
+      <ul class="sub">
+         <li><a href="#">投稿するには&raquo;</a>
+            <ul>
+               <li><a href="/tweets/new">ここ！</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="#">お問い合わせ先 &raquo;</a>
+            <ul>
+               <li><a href="#">ああああ</a></li>
+               <li><a href="#">いいいい &raquo;</a>
+               <ul>
+                  <li><a href="#">っっっ</a></li>
+                  <li><a href="#">ううう</a></li>
+               </ul>
+            </li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul>
   </header>
     <div class="contents">
     <div class="message">
