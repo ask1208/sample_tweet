@@ -27,7 +27,7 @@ html {
 }
 
 body{
-  background-color: #f6f6f6;
+  background-image: url("umi.jpg"); 
   width: 100%;
   height: 100%;
   .header{
@@ -54,6 +54,7 @@ body{
       }
     }
   }
+  
   .contents{
     margin: 30px auto 0;
     background-color: #fff;
